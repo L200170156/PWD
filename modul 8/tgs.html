@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>Konverter Nilai</title>
+    <script type="text/javascript">
+        function konvNilai() {
+            nilaiKu = document.myform.nilai.value;
+            if (nilaiKu >= 0 && nilaiKu <= 20) {
+                document.myform.hasil.value = "Nilai E";
+            } else if (nilaiKu >= 21 && nilaiKu <= 40) {
+                document.myform.hasil.value = "Nilai D";
+            } else if (nilaiKu >= 41 && nilaiKu <= 60) {
+                document.myform.hasil.value = "Nilai C";
+            } else if (nilaiKu >= 61 && nilaiKu <= 80) {
+                document.myform.hasil.value = "Nilai B";
+            } else if (nilaiKu >= 81 && nilaiKu <= 100) {
+                document.myform.hasil.value = "Nilai A";
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <form name="myform">
+        <h3>Program Pengambilan Keputusan</h3>
+        Nilai = <input type="text" name="nilai" size="5">
+        </br>
+        </br>
+        <input type="button" name="aksi" value="Konversikan" onclick="konvNilai();">
+        </br>
+        </br>
+        Hasil =<input type="text" name="hasil" size="5">
+    </form>
+</body>
+</html>
